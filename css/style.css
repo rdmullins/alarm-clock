@@ -4,6 +4,39 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(22, 1fr);
-    grid-template-rows: repeat(40, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
 }
+
+.leftSidePadding {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    /* grid-row-start: 1;
+    grid-row-end: 20; */
+} 
+
+.rightSidePadding {
+    grid-column-start: 18;
+    grid-column-end: 21;
+    /* grid-row-start: 1;
+    grid-row-end: 20; */
+} 
+
+.topPadding {
+    grid-column-start: 4;
+    grid-column-end: 18;
+    /* grid-row-start: 1;
+    grid-row-end: 5; */
+}
+
+.clockTop {
+    grid-column-start: 4;
+    grid-column-end: 18;
+    background-color: silver;
+}
+
+.clockBorder {
+    grid-column-start: auto span 1;
+    background-color: silver;
+}
+
