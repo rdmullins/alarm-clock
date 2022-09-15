@@ -10,22 +10,22 @@ body {
 
 .leftSidePadding {
     grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 20;
-}
+    grid-column-end: 5;
+    /* grid-row-start: 1;
+    grid-row-end: 20; */
+} 
 
 .rightSidePadding {
-    grid-column-start: 17;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 20;
-}
+    grid-column-start: 15;
+    grid-column-end: 20;
+    /* grid-row-start: 1;
+    grid-row-end: 20; */
+} 
 
 .topPadding {
-    grid-column-start: 2;
-    grid-column-end: 16;
-    grid-row-start: 1;
-    grid-row-end: 5;
+    grid-column-start: 5;
+    grid-column-end: 15;
+    /* grid-row-start: 1;
+    grid-row-end: 5; */
 }
 
