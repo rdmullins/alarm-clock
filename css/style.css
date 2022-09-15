@@ -1,0 +1,9 @@
+body {
+    background-color: lightsalmon;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(22, 1fr);
+    grid-template-rows: repeat(40, 1fr);
+}
