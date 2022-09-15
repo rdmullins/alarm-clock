@@ -18,3 +18,9 @@ function testFunction() {
     let alarmTime = (alarmHours + ":" + alarmMinutes + ":" + alarmSeconds);
     console.log("Alarm is set for " + alarmTime);
 };
+
+function timeUpdate() {
+    console.log("This is a test.")
+}
+
+setInterval (timeUpdate(), 1000);
