@@ -19,8 +19,21 @@ function testFunction() {
     console.log("Alarm is set for " + alarmTime);
 };
 
-function timeUpdate() {
-    console.log("This is a test.")
-}
+function getTime() {
+    let timeHours = 0;
+    let timeMinutes = 0;
+    let timeSeconds = 0;
+    let alarmHours = 0;
+    let alarmMinutes = 0;
+    let alarmSeconds = 0;
+    
 
-setInterval (timeUpdate(), 1000);
+    let today = new Date();
+    let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    let date = (today.getMonth()+1)+'-'+today.getDate() +'-'+ today.getFullYear();
+
+    let timeBox = document.getElementById("showTime");
+    timeBox.innerText = time;
+};
+
+setInterval(getTime, 1000);
