@@ -32,7 +32,11 @@ function getTime() {
     
 
     let today = new Date();
-    let time = today.getHours() + ":" + today.getMinutes() + ":";
+    let time = today.getHours() + ":";
+    if (today.getMinutes() < 10) {
+        time = time + "0";
+    }
+    time = time + today.getMinutes() + ":";
     if (today.getSeconds() < 10) {
         time = time + "0";
     }
@@ -48,17 +52,21 @@ function getTime() {
 
     alarmHours = (alarmInput[0]+alarmInput[1]);
     Number(alarmHours);
-    console.log(alarmHours);
+    // console.log(alarmHours);
 
     alarmMinutes = (alarmInput[3]+alarmInput[4]);
     Number(alarmMinutes);
-    console.log(alarmMinutes);
+    // console.log(alarmMinutes);
 
 
-    if ((alarmHours == today.getHours()) && (alarmMinutes == today.getMinutes())) {
-        alert("It is " + time + ".");
+    if ((alarmHours == today.getHours()) && (alarmMinutes == today.getMinutes()) && today.getSeconds() == "00" && document.getElementById("alarmOnOff")) {
+        callAlarm(time);
     }
 };
+
+function callAlarm(time) {
+    alert("It is " + time + ".");
+}
 
 function getAlarm() {
     alarmInput = (document.getElementById("alarmInput")).value;
