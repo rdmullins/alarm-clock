@@ -1,5 +1,6 @@
 body {
     background-color: lightsalmon;
+    height: 100%;
     padding: 0px;
     margin-top: 0px;
     margin-left: 10vw;
@@ -12,6 +13,19 @@ body {
     background-color: black;
     color: green;
 }
+
+.bg {
+    /* The image used */
+    background-image: url("img_girl.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 .container {
     /* Sets a grid 12 columns wide 6vw each inside 14vw margins (12x6=72vw, 2x14=28vw, 100vw total) */
