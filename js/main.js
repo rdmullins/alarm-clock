@@ -36,4 +36,4 @@ function getTime() {
     timeBox.innerText = time;
 };
 
-setInterval(getTime(), 1000);
+setInterval(getTime, 1000);
