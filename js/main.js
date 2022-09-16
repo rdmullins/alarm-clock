@@ -59,7 +59,7 @@ function getTime() {
     // console.log(alarmMinutes);
 
 
-    if ((alarmHours == today.getHours()) && (alarmMinutes == today.getMinutes()) && today.getSeconds() == "00" && document.getElementById("alarmOnOff")) {
+    if ((alarmHours == today.getHours()) && (alarmMinutes == today.getMinutes()) && today.getSeconds() == "00") {
         callAlarm(time);
     }
 };
