@@ -33,7 +33,9 @@ function getTime() {
     let date = (today.getMonth()+1)+'-'+today.getDate() +'-'+ today.getFullYear();
 
     let timeBox = document.getElementById("showTime");
+    let dateBox = document.getElementById("showDate");
     timeBox.innerText = time;
+    dateBox.innerText = date;
 };
 
 setInterval(getTime, 1000);

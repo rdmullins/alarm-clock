@@ -16,6 +16,15 @@ body {
     text-align: center;
 }
 
+#showDate {
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 50pt;
+    background-color: rgba(0,0,0,0.60);
+    color: green;
+    width: 40vw;
+    text-align: center;
+}
+
 .bg {
     /* The image used */
     background-image: url("/img/oldPCs.jpg");
