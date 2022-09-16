@@ -52,14 +52,14 @@ function getTime() {
 
     alarmHours = (alarmInput[0]+alarmInput[1]);
     Number(alarmHours);
-    console.log(alarmHours);
+    // console.log(alarmHours);
 
     alarmMinutes = (alarmInput[3]+alarmInput[4]);
     Number(alarmMinutes);
-    console.log(alarmMinutes);
+    // console.log(alarmMinutes);
 
 
-    if ((alarmHours == today.getHours()) && (alarmMinutes == today.getMinutes()) && today.getSeconds() == "00") {
+    if ((alarmHours == today.getHours()) && (alarmMinutes == today.getMinutes()) && today.getSeconds() == "00" && document.getElementById("alarmOnOff")) {
         callAlarm(time);
     }
 };
