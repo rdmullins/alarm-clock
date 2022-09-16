@@ -9,25 +9,63 @@ body {
 
 #showTime {
     font-family: 'DotGothic16', sans-serif;
-    font-size: 100pt;
+    font-size: 10vw;
     background-color: rgba(0,0,0,0.60);
     color: green;
     width: 40vw;
     text-align: center;
 }
 
+#showDate {
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 5vw;
+    background-color: rgba(0,0,0,0.60);
+    color: green;
+    width: 40vw;
+    text-align: center;
+}
+
+#alarmSet {
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 3vw;
+    background-color: rgba(0,0,0,0.60);
+    color: green;
+    width: 40vw;
+    text-align: center;
+}
+
+#showAlarm {
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 3vw;
+    background-color: rgba(0,0,0,0.60);
+    color: green;
+    width: 40vw;
+    text-align: center;
+}
+
+#button {
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 1vw;
+    background-color: rgba(0,0,0,0);
+    color: green;
+    width: auto;
+    text-align: center;
+}
+
 .bg {
-    /* The image used */
     background-image: url("/img/oldPCs.jpg");
-  
-    /* Full height */
     height: 100vh; 
-  
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+
+
+
+
+
+/* Grid Display - Needs Work */
 
 .container {
     /* Sets a grid 12 columns wide 6vw each inside 14vw margins (12x6=72vw, 2x14=28vw, 100vw total) */
